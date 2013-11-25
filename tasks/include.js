@@ -64,7 +64,8 @@ module.exports = function(grunt)
 
                 var includeContents = grunt.file.read(includePath);
 
-                includeContents =template.compile(includeContents)(localVars);
+                if(typeof matches[3] !== undefined)
+                    includeContents =template.compile(includeContents)(localVars);
 
                 includeContents = _replace(includeContents, pageVars);
 

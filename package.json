@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-include",
   "description": "通过 grunt 实现 html include 等等...",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/twoer/grunt-contrib-include",
   "author": {
     "name": "zhangkun",
