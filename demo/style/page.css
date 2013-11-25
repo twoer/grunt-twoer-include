@@ -1,0 +1,24 @@
+body
+{
+	margin:0px;
+	font-size:13px;
+}
+.main
+{
+	margin:0px auto;
+	width:900px;
+}
+.nav-list li
+{
+	padding:4px;
+}
+.nav-list a
+{
+	color:#666;
+}
+.nav-list a.current
+{
+	font-size:16px;
+	color:#f00;
+	font-weight:700;
+}

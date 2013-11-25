@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	@include('style.html');
+</head>
+<body>
+	
+	<div class="main">
+		@include('nav.html', {"nav" : "test3"});
+
+		<h1>test3 page ....</h1>
+
+		<div>
+			<img src="@resroot;images/logo.png" alt="">
+		</div>
+	</div>
+</body>
+@include('script.html');
+</html>
