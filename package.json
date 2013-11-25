@@ -1,0 +1,34 @@
+{
+  "name": "grunt-contrib-include",
+  "description": "通过 grunt 实现 html include 等等...",
+  "version": "0.0.3",
+  "homepage": "https://github.com/twoer/grunt-contrib-include",
+  "author": {
+    "name": "zhangkun",
+    "url": "http://cnblogs.com/twoer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twoer/grunt-contrib-include.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twoer/grunt-contrib-include/issues"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "grunt": "~0.4.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin",
+    "include replace"
+  ],
+  "contributors": []
+}
