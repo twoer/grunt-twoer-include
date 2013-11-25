@@ -5,7 +5,7 @@ grunt-contrib-include
 
 > 本程序基于 https://github.com/alanshaw/grunt-include-replace
 
-## 区别（主要是原程序功能比较弱）
+> 区别（主要是原程序功能比较弱）
 
 *  html 目录超过 3层 就会报错
 *  对 style、script、images 资源文件路径处理不佳，虽然有 docroot 但是需要一层一层传递
@@ -19,35 +19,35 @@ grunt-contrib-include
 > 增加一个 resroot 参数及 resroot 、absroot 全局变量
 ```js
 //include
-        include: 
+include: 
+{
+    dev: 
+    {
+        options: 
         {
-            dev: 
+            includesDir : 'includes/',
+            prefix : '@',
+            suffix : ';',
+            resroot : '',
+            globals : 
             {
-                options: 
-                {
-                    includesDir : 'includes/',
-                    prefix : '@',
-                    suffix : ';',
-                    resroot : '',
-                    globals : 
-                    {
-                        'var1' : 'globals var1 ...',
-                        'var2' : 'globals var2 ...'
-                    }
-                },
-                files: 
-                [
-                    {
-                        src: 
-                        [
-                            '*.html', 
-                            'test/**/*.html'
-                        ],
-                        dest: '../'
-                    }
-                ]
+                'var1' : 'globals var1 ...',
+                'var2' : 'globals var2 ...'
             }
-        }
+        },
+        files: 
+        [
+            {
+                src: 
+                [
+                    '*.html', 
+                    'test/**/*.html'
+                ],
+                dest: '../'
+            }
+        ]
+    }
+}
 ```
 
 #### resroot
@@ -90,7 +90,7 @@ Type: `String`
 
 ## 感谢：
 * 整个程序大部分都参考了 https://github.com/alanshaw/grunt-include-replace
-* https://github.com/aui/artTemplate
+* 模板引擎使用了 https://github.com/aui/artTemplate
 
 ## 最后
 * 新手，程序难免有瑕疵，望大家多包涵，多斧正！
